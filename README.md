@@ -23,4 +23,4 @@ Creación de producto con 2 imagenes)
 
 /producto/other/simple/
 ### Tercer formulario (Formulario con variación)
-Creación de producto con variaciones
+/producto/variation/
