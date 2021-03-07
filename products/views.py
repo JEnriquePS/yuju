@@ -8,7 +8,8 @@ from django.urls import reverse_lazy
 from django.views.generic import FormView, TemplateView
 
 from .forms import SimpleProductForm, OtherSimpleProductForm, VariationProductForm
-from .utils import get_data_product_simple, get_headers
+from .utils import get_data_product_simple, get_headers, \
+    get_data_product_variations
 
 PRODUCT_URL = 'https://api.software.madkting.com/shops/{shop_pk}/products/'
 
@@ -61,7 +62,7 @@ class VariationProductFormView(FormView):
         url = PRODUCT_URL.format(shop_pk=settings.SHOP_PK)
         response = requests.post(url,
                                  headers=get_headers(),
-                                 data=get_data_product_simple(form))
+                                 data=get_data_product_variations(form))
         if response.ok:
             return HttpResponseRedirect(self.get_success_url())
         else:
