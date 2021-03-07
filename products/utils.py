@@ -56,19 +56,19 @@ def get_data_product_variations(form):
         'price': form.cleaned_data['var01_price'],
         'sku': form.cleaned_data['var01_sku'],
         'stock': form.cleaned_data['var01_stock'],
-        'part_number': form.cleaned_data['var01_part__number'],
-        'images': {
+        'part_number': form.cleaned_data['var01_part_number'],
+        'images': [{
             'url': form.cleaned_data['var01_image01']
-        }
+        }]
     }
     variation02 = {
         'price': form.cleaned_data['var02_price'],
         'sku': form.cleaned_data['var02_sku'],
         'stock': form.cleaned_data['var02_stock'],
         'part_number': form.cleaned_data['var02_part_number'],
-        'images': {
+        'images': [{
             'url': form.cleaned_data['var02_image01']
-        }
+        }]
     }
 
     data = {

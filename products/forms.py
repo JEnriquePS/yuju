@@ -28,14 +28,14 @@ class OtherSimpleProductForm(SimpleProductForm):
 class VariationProductForm(SimpleProductForm):
     image02 = forms.URLField(label='Url Imagen 2', required=False)
 
-    var01_price= forms.FloatField(label='Variación 1 Precio', initial=20)
-    var01_sku= forms.CharField(label='Variación 1 SKU', max_length=40, initial='TESTL009K2HHM0-00')
-    var01_stock = forms.IntegerField(label='Variación 1 Stock', initial=1),
-    part01_part_number = forms.CharField(label='Variación 1 Part Number', max_length=40, initial='TESTL009K2HHM0-00')
+    var01_price = forms.FloatField(label='Variación 1 Precio', initial=20)
+    var01_sku = forms.CharField(label='Variación 1 SKU', max_length=40, initial='TESTL009K2HHM0-00')
+    var01_stock = forms.IntegerField(label='Variación 1 Stock', initial=1)
+    var01_part_number = forms.CharField(label='Variación 1 Part Number', max_length=40, initial='TESTL009K2HHM0-00')
     var01_image01 = forms.URLField(label='Variación 1 Url Imagen 1', required=False)
 
     var02_price = forms.FloatField(label='Variación 2 Precio', initial=20)
     var02_sku = forms.CharField(label='Variación 2 SKU', max_length=40, initial='TESTL009K2HHM0-00')
-    var02_stock = forms.IntegerField(label='Variación 2Stock', initial=1),
-    part02_part_number = forms.CharField(label='Variación 2 Part Number', max_length=40, initial='TESTL009K2HHM0-00')
+    var02_stock = forms.IntegerField(label='Variación 2Stock', initial=1)
+    var02_part_number = forms.CharField(label='Variación 2 Part Number', max_length=40, initial='TESTL009K2HHM0-00')
     var02_image01 = forms.URLField(label='Variación 2 Url Imagen 1', required=False)

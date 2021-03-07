@@ -56,7 +56,7 @@ class OtherSimpleProductFormView(FormView):
 
 class VariationProductFormView(FormView):
     form_class = VariationProductForm
-    template_name = 'product02.html'
+    template_name = 'product03.html'
 
     def form_valid(self, form):
         url = PRODUCT_URL.format(shop_pk=settings.SHOP_PK)
